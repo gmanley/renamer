@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require File.expand_path('../../lib/renamer', __FILE__)
+
+DRY_RUN = true
+renamer = VideoScanner.new($ARGV[0])
+renamer.rename!
